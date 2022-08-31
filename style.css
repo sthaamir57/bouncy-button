@@ -1,0 +1,78 @@
+:root {
+    --btn-border-radius: 4em;
+    --btn-font-size: 2.2rem;
+    --btn-font-weight: bold;
+    --btn-title-clr: #fff;
+    --btn-fill-clr: #37c3ff;
+    --btn-filler-one-clr: #22b1ef;
+    --btn-filler-two-clr: #1599d2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 2.2rem;
+    height: 100px;
+    padding: 0 4em;
+    border-radius: var(--btn-border-radius);
+}
+
+.pos-rel { 
+    position: relative;
+}
+
+.pos-abs { 
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.btn-fill {
+    background-color: var(--btn-fill-clr);
+    border-radius: inherit;
+    overflow: hidden;
+}
+.btn-title{
+    color: var(--btn-title-clr);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.btn-filler {
+    height: 100%;
+    width: 100%;
+    border-radius: var(--btn-border-radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+}
+
+.btn-filler-one {
+    background-color: var(--btn-filler-one-clr);
+}
+.btn-filler-two {
+    background-color: var(--btn-filler-two-clr);
+}
